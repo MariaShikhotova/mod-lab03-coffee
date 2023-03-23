@@ -2,7 +2,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "windows.h"
+#include <synchapi.h>
 class Automata {
  public:
   enum State {
