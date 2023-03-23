@@ -2,7 +2,6 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <synchapi.h>
 class Automata {
  public:
   enum State {
