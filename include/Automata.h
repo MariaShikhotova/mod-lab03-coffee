@@ -2,6 +2,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+
 class Automata {
  public:
   enum State {
@@ -11,12 +12,14 @@ class Automata {
     CHECK,
     COOK
   };
+ 
  private:
   double cash;
   string *menu;
   int *prices;
   State state;
   int count_menu;
+ 
  public:
   Automata();
   void on();
@@ -26,6 +29,7 @@ class Automata {
   State getState();
   void choice(int);
   void cancel();
+ 
  private:
   void check(int);
   void cook(int);
