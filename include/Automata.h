@@ -15,7 +15,7 @@ class Automata {
  
  private:
   double cash;
-  string *menu;
+  std::string *menu;
   int *prices;
   State state;
   int count_menu;
