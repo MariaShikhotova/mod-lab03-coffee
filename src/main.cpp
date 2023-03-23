@@ -1,7 +1,6 @@
 // Copyright 2022 GHA Test Team
 #include <iostream>
 #include <string>
-#include "windows.h"
 #include "Automata.h"
 int main() {
   setlocale(LC_ALL, "Russian");
