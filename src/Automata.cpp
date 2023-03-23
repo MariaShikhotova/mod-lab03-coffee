@@ -40,9 +40,9 @@ void Automata::check(int num) {
   if (cash < prices[num - 1]) {
     cout << "Недостаточно денег\n";
     state = WAIT;
-
-  } else
+  } else {
     cook(num);
+  }
 }
 void Automata::cancel() {
   if (state == ACCEPT || state == CHECK) state = WAIT;
