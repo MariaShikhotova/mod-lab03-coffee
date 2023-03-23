@@ -3,8 +3,6 @@
 #include <iostream>
 #include <string>
 #include "windows.h"
-using namespace std;
-
 class Automata {
  public:
   enum State {
@@ -13,16 +11,13 @@ class Automata {
     ACCEPT,
     CHECK,
     COOK
-
   };
-
  private:
   double cash;
   string *menu;
   int *prices;
   State state;
   int count_menu;
-
  public:
   Automata();
   void on();
@@ -32,7 +27,6 @@ class Automata {
   State getState();
   void choice(int);
   void cancel();
-
  private:
   void check(int);
   void cook(int);
