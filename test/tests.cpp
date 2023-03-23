@@ -8,20 +8,20 @@ TEST(Automata, TestOn) {
   EXPECT_EQ(automata.getState(), "WAIT");
 }
 TEST(Automata, TestOff) {
-  Automata automata();
+  Automata automata;
   automata.on();
   automata.off();
   EXPECT_EQ(automata.getState(), "OFF");
 }
 TEST(Automata, TestWait) {
-  Automata automata();
+  Automata automata;
   automata.on();
   automata.coin(200);
   automata.cancel();
   EXPECT_EQ(automata.getState(), "WAIT");
 }
 TEST(Automata, TestFinish) {
-  Automata automata();
+  Automata automata;
   automata.on();
   automata.coin(200);
   automata.choice(2);
@@ -29,27 +29,27 @@ TEST(Automata, TestFinish) {
 }
 
 TEST(Automata, TestMenu) {
-  Automata automata();
+  Automata automata;
   automata.on();
   automata.coin(200);
   automata.choice(10);
   EXPECT_EQ(automata.getState(), "WAIT");
 }
 TEST(Automata, TestCash) {
-  Automata automata();
+  Automata automata;
   automata.on();
   automata.coin(10);
   automata.choice(2);
   EXPECT_EQ(automata.getState(), "WAIT");
 }
 TEST(Automata, TestCoin) {
-  Automata automata();
+  Automata automata;
   automata.on();
   automata.choice(2);
   EXPECT_EQ(automata.getState(), "WAIT");
 }
 TEST(Automata, TestAccept) {
-  Automata automata();
+  Automata automata;
   automata.coin(150);
   EXPECT_EQ(automata.getState(), "ACCEPT");
 }
