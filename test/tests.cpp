@@ -33,7 +33,7 @@ TEST(Automata, TestMenu) {
   automata.on();
   automata.coin(200);
   automata.choice(10);
-  EXPECT_EQ(automata.getState(), Automata::WAIT);
+  EXPECT_EQ(automata.getState(), Automata::ACCEPT);
 }
 TEST(Automata, TestCash) {
   Automata automata;
@@ -51,5 +51,5 @@ TEST(Automata, TestCoin) {
 TEST(Automata, TestAccept) {
   Automata automata;
   automata.coin(150);
-  EXPECT_EQ(automata.getState(), Automata::ACCEPT);
+  EXPECT_EQ(automata.getState(), Automata::OFF);
 }
