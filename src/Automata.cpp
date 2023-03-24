@@ -52,10 +52,13 @@ void Automata::cook(int num) {
   switch (num) {
     case 1:
       std::cout << "Приготовление напитка 1\n";
+      break;
     case 2:
       std::cout << "Приготовление напитка 2\n";
+      break;
     case 3:
       std::cout << "Приготовление напитка 3\n";
+      break;
   }
   finish(cash - prices[num - 1]);
 }
