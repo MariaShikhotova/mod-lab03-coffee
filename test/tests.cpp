@@ -3,7 +3,7 @@
 #include <gtest/gtest.h>
 #include "Automata.h"
 TEST(Automata, TestOn) {
-  Automata automata();
+  Automata automata;
   automata.on();
   EXPECT_EQ(automata.getState(), "WAIT");
 }
